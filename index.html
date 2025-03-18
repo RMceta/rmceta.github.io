@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/vnd.icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMceta</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+        body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: white; text-align: center; }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script src="js/direccion-ip.js"></script>
+    <p class="direccion-ip">Tu dirección IP es: <span id="ipAddress">Cargando...</span></p>
+    <div class="preguntas">
+        <script src="js/preguntas.js"></script>
+        <h2 class="pregunta-texto" data-text="¿Por qué es importante usar un pseudónimo en Internet?"></h2>
+        <p class="respuesta-texto">Para proteger la privacidad y seguridad.</p>
+
+        <h2 class="pregunta-texto" data-text="¿Qué datos personales nunca deberían publicarse en línea?"></h2>
+        <p class="respuesta-texto">Dirección, teléfono, documentos oficiales, contraseñas.</p>
+
+        <h2 class="pregunta-texto" data-text="¿Cómo afecta la identidad digital a futuras oportunidades laborales?"></h2>
+        <p class="respuesta-texto">Puede influir en la reputación y empleabilidad.</p>
+    </div>
+    <div class="profile-card">
+        <h1>Hola! Soy RMceta</h1>
+        <canvas id="background"></canvas> 
+        <script src="js/texto.js"></script>
+        <script src="js/fondo.js"></script>
+        <img src="img/avatar.png" alt="Mi Avatar" class="avatar">
+        <p>Este es mi perfil ficticio, creado con HTML, CSS y JS.</p>
+        <script src="js/validacion.js"></script>
+        <form id="miFormulario">
+            <label for="name">Nombre/Pseudónimo:</label>
+            <input type="text" id="name" name="name" placeholder="Tu pseudónimo" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <label for="message">Sobre mí:</label>
+            <textarea id="message" name="message" placeholder="Describe tu perfil..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensajeError" style="color: rgb(255, 0, 0); display: none;"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-card {
+    position: absolute;
+    left: 100px;
+    top: 15%;
+    background: #252525;
+    padding: 30px;
+    max-width: 470px;
+    margin: 0px auto;
+    box-shadow: 0 0 50px #ff5b5b;
+    border-radius: 80px;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 0, 0) !important;
+}
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid #ff5b5b;
+    background: #333;
+    color: white;
+}
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    padding: 10px 80px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e54141;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1; 
+ 
+}
+
+.preguntas {
+    font-size: large;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+}
+
+.direccion-ip {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    background: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #ff5b5b;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#ipAddress {
+    font-size: 20px;
+    color: #fcfcfc;
+    font-weight: bold;
+}
+   
+
+.respuesta-texto {
+    color: #fcfcfc;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.respuesta-texto.show {
+    opacity: 1;
+}
+
